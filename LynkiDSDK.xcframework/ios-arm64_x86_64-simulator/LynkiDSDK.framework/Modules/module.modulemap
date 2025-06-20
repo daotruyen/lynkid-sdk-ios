@@ -1,0 +1,6 @@
+framework module LynkiDSDK {
+  umbrella header "LynkiDSDK.h"
+  export *
+
+  module * { export * }
+}
