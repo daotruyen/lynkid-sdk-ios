@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
 
     # 1
     s.platform = :ios
-    s.ios.deployment_target = '12.0'
-    s.platform = :ios, '12.0'
+    s.ios.deployment_target = '13.0'
+    s.platform = :ios, '13.0'
     s.name = "LynkiDSDK"
     s.requires_arc = true
     s.summary = "LynkiD SDK"
@@ -36,17 +36,18 @@ Pod::Spec.new do |s|
     s.dependency 'Tabman', '~> 3.0'
     s.dependency 'EasyTipView', '~> 2.1.0'
     s.dependency 'SVGKit', '~> 3.0.0'
+    s.dependency 'SVProgressHUD'
+    s.dependency 'SkeletonView'
     s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
     
     # 8
     # s.source_files = "LynkiDSDK/**/*.{swift}"
-    s.source_files = "LynkiDSDK/**/*.{swift}"
+    s.vendored_frameworks = 'LynkiDSDK.xcframework'
     
     # 9
-    s.resources = "LynkiDSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,svg,html,xcframework}"
+    # s.resources = "LynkiDSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,svg,html,xcframework}"
     #s.resources = "LynkiDSDK/**/*"
     
     # 10
-    s.swift_version = "4.2"
-    
+    s.swift_versions   = ['5.0']    
     end
