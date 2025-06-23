@@ -46,7 +46,6 @@ Pod::Spec.new do |s|
     
     # 9
     # s.resources = "LynkiDSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,svg,html,xcframework}"
-    #s.resources = "LynkiDSDK/**/*"
     
     # 10
     s.swift_versions   = ['5.0']    
