@@ -5,12 +5,12 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.ios.deployment_target = '13.0'
     s.platform = :ios, '13.0'
-    s.name = "LynkiDSDK"
+    s.name = "LynkiD_SDK"
     s.requires_arc = true
     s.summary = "LynkiD SDK"
     
     # 2
-    s.version = "0.0.1"
+    s.version = "1.1.0"
     
     # 3
     s.license = { :type => "MIT", :file => "LICENSE" }
